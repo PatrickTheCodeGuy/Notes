@@ -61,6 +61,7 @@ class OneNoteEdit extends Component {
 						onChange={this.handleChange}
 					/>
 					<button
+						type="button"
 						onClick={() => this.editNote(this.state.title, this.state.body)}
 						className="savenote-button"
 					>
