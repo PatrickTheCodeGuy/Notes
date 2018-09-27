@@ -38,12 +38,19 @@ class MainNotes extends Component {
 		);
 	};
 	render() {
+		const headers = [
+			{ label: "Title", key: "title" },
+			{ label: "Body", key: "body" },
+			{ label: "Date", key: "date" },
+			{ label: "ID", key: "id" }
+		];
 		return (
 			<div>
 				<button className="savenote-button-export">
 					<CSVLink
 						className="csv"
 						filename={"My-Notes.csv"}
+						headers={headers}
 						data={this.props.notes}
 					>
 						Export CSV
