@@ -128,13 +128,15 @@ a:hover {
 	width: 15%;
 	padding: 15px;
 	margin: 10px 0.5%;
-	height: 180px;
+	height: 185px;
 	overflow: hidden;
 	transition: box-shadow 0.1s ease-in-out;
 }
 .date {
 	color: #adadad;
 	font-style: italic;
+	padding-top: 7px;
+	padding-bottom: 5px;
 }
 .note-link:hover {
 	text-decoration: none;
@@ -143,7 +145,7 @@ a:hover {
 	width: 15%;
 	padding: 15px;
 	margin: 10px 0.5%;
-	height: 180px;
+	height: 185px;
 	overflow: hidden;
 	box-shadow: 0 0 30px gray;
 }
