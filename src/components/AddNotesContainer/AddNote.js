@@ -8,6 +8,7 @@ import moment from "moment";
 class AddNote extends Component {
 	constructor(props) {
 		super(props);
+
 		this.state = {
 			title: "",
 			body: "",
@@ -27,12 +28,13 @@ class AddNote extends Component {
 	addNote = event => {
 		event.preventDefault();
 		{
-			console.log(this.state);
+			// console.log(this.state);
 		}
 		if (!this.state.title || !this.state.body) {
 			this.setState({ visable: true });
 		} else {
 			this.props.addNote(this.state);
+
 			this.props.history.push("/");
 		}
 	};
