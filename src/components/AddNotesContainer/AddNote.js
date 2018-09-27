@@ -13,7 +13,7 @@ class AddNote extends Component {
 			title: "",
 			body: "",
 			id: Date.now(),
-			date: moment().format("MMM Do YYYY"),
+			date: moment().format("h:mm a, MMM Do YYYY"),
 			visable: false
 		};
 	}

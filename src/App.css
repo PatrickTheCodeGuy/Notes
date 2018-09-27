@@ -124,10 +124,10 @@ a:hover {
 	text-decoration: none;
 	border: 1px solid black;
 	background: white;
-	width: 30%;
+	width: 15%;
 	padding: 15px;
 	margin: 10px 0.5%;
-	height: 170px;
+	height: 180px;
 	overflow: hidden;
 	transition: box-shadow 0.1s ease-in-out;
 }
@@ -139,10 +139,10 @@ a:hover {
 	text-decoration: none;
 	border: 1px solid black;
 	background: white;
-	width: 30%;
+	width: 15%;
 	padding: 15px;
 	margin: 10px 0.5%;
-	height: 170px;
+	height: 180px;
 	overflow: hidden;
 	box-shadow: 0 0 30px gray;
 }
