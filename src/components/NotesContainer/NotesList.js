@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Note from "./Note";
 import { getNotes } from "../actions/actions";
 import { connect } from "react-redux";
+import { CSVLink, CSVDownload } from "react-csv";
+import csv from "../../csv.png";
 
 const update = require("immutability-helper");
 
@@ -37,19 +39,32 @@ class MainNotes extends Component {
 	};
 	render() {
 		return (
-			<div className="note-container">
-				{this.state.notes.map((note, index) => (
-					<Note
-						key={note.id}
-						note={note}
-						id={note.id}
-						index={index}
-						date={note.date}
-						title={note.title}
-						body={note.body}
-						moveCard={this.moveCard}
-					/>
-				))}
+			<div>
+				<button className="savenote-button-export">
+					<CSVLink
+						className="csv"
+						filename={"My-Notes.csv"}
+						data={this.props.notes}
+					>
+						Export CSV
+						<img className="csv-logo" src={csv} />
+					</CSVLink>
+				</button>
+
+				<div className="note-container">
+					{this.state.notes.map((note, index) => (
+						<Note
+							key={note.id}
+							note={note}
+							id={note.id}
+							index={index}
+							date={note.date}
+							title={note.title}
+							body={note.body}
+							moveCard={this.moveCard}
+						/>
+					))}
+				</div>
 			</div>
 		);
 	}
