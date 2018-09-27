@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { addNote } from "../actions/actions";
 import { withRouter } from "react-router-dom";
 import { Alert } from "reactstrap";
+import moment from "moment";
 
 class AddNote extends Component {
 	constructor(props) {
@@ -11,6 +12,7 @@ class AddNote extends Component {
 			title: "",
 			body: "",
 			id: Date.now(),
+			date: moment().format("MMM Do YYYY"),
 			visable: false
 		};
 	}

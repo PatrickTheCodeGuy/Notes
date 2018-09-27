@@ -11,6 +11,7 @@ function Note(props) {
 			<div className="body">
 				<p className="text-body">{props.body}</p>
 			</div>
+			<div className="date">Created on: {props.date}</div>
 		</Link>
 	);
 }

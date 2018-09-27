@@ -109,9 +109,12 @@
 	width: 30%;
 	padding: 15px;
 	margin: 10px 0.5%;
-	height: 150px;
+	height: 170px;
 	overflow: hidden;
 	transition: box-shadow 0.1s ease-in-out;
+}
+.date {
+	color: #adadad;
 }
 .note-link:hover {
 	text-decoration: none;
@@ -120,7 +123,7 @@
 	width: 30%;
 	padding: 15px;
 	margin: 10px 0.5%;
-	height: 150px;
+	height: 170px;
 	overflow: hidden;
 	box-shadow: 0 0 30px gray;
 }
