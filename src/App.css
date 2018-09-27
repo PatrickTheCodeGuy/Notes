@@ -1,6 +1,12 @@
 * {
 	font-family: "Roboto", sans-serif;
 }
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
 
 .App {
 	background: #f2f2f2;
@@ -24,6 +30,14 @@
 	padding: 0;
 	margin-right: 50%;
 	font-size: 20px;
+}
+.link {
+	text-decoration: none;
+	color: black;
+}
+.link:hover {
+	text-decoration: none;
+	color: black;
 }
 .button:hover {
 	background: #f2f2f2;

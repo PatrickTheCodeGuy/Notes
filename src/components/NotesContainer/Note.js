@@ -67,13 +67,14 @@ class Note extends Component {
 			connectDropTarget
 		} = this.props;
 		const opacity = isDragging ? 0 : 1;
+
 		return (
 			connectDragSource &&
 			connectDropTarget &&
 			connectDragSource(
 				connectDropTarget(
 					<div className="note-link notes" style={{ opacity }}>
-						<Link to={`/note/${this.props.id}`}>
+						<Link className="link" to={`/note/${this.props.id}`}>
 							<div className="title">
 								<h2>{title}</h2>
 							</div>
