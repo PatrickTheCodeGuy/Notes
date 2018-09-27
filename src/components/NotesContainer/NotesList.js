@@ -46,17 +46,17 @@ class MainNotes extends Component {
 		];
 		return (
 			<div>
-				<button className="savenote-button-export">
-					<CSVLink
-						className="csv"
-						filename={"My-Notes.csv"}
-						headers={headers}
-						data={this.props.notes}
-					>
+				<CSVLink
+					className="csv"
+					filename={"My-Notes.csv"}
+					headers={headers}
+					data={this.props.notes}
+				>
+					<button className="savenote-button-export">
 						Export CSV
 						<img className="csv-logo" src={csv} />
-					</CSVLink>
-				</button>
+					</button>
+				</CSVLink>
 
 				<div className="note-container">
 					{this.state.notes.map((note, index) => (
