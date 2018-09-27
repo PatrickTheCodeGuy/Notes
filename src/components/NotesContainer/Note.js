@@ -82,8 +82,8 @@ class Note extends Component {
 							<div className="body">
 								<p className="text-body">{body}</p>
 							</div>
-							<div className="date">Created at: {date}</div>
 						</Link>
+						<div className="date">Created at: {date}</div>
 					</div>
 				)
 			)

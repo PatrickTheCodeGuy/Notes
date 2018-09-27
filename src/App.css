@@ -111,6 +111,7 @@ a:hover {
 	overflow: hidden;
 	text-align: left;
 	line-height: 1.8;
+	max-height: 3.6em;
 }
 .note-container {
 	display: flex;
